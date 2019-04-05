@@ -6,7 +6,7 @@ var server = http.createServer(function(request, response){
     //获取输入的url解析后的对象
     var pathObj = url.parse(request.url, true);
     //static文件夹的绝对路径
-    var staticPath = path.resolve(__dirname, 'static')
+    var staticPath = path.resolve(__dirname, 'smaple')
     //获取资源文件绝对路径
     var filePath = path.join(staticPath, pathObj.pathname)
     //异步读取file
